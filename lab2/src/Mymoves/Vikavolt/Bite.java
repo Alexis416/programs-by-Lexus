@@ -12,7 +12,6 @@ public class Bite extends PhysicalMove {
     }
     @Override
     protected void applyOppEffects(Pokemon p){
-        super.applyOppEffects(p);
         if (Program.chance(0.3)){
             Effect.flinch(p);
         }
