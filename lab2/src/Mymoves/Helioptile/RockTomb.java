@@ -8,7 +8,6 @@ public class RockTomb extends PhysicalMove {
     }
     @Override
     protected void applyOppEffects(Pokemon p){
-        super.applyOppEffects(p);
         Effect speed = new Effect().stat(Stat.SPEED,-1);
         p.addEffect(speed);
     }
