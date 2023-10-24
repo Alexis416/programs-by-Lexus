@@ -12,7 +12,6 @@ public class HeatWave extends SpecialMove {
     }
     @Override
     protected void applyOppEffects(Pokemon p){
-        super.applyOppEffects(p);
         if(Program.chance(0.1)){
             Effect.burn(p);
         }
