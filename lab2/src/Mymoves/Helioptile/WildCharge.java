@@ -13,7 +13,7 @@ public class WildCharge extends PhysicalMove {
         super.applySelfDamage(def, damage);
     }
     @Override
-    protected double calcCriticalHit(Pokemon att, Pokemon def){
+    protected double calcBaseDamage(Pokemon att, Pokemon def){
         return 1d/4d;
     }
 
