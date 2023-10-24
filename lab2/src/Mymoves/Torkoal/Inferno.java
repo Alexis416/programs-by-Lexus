@@ -11,7 +11,6 @@ public class Inferno extends SpecialMove {
     }
     @Override
     protected void applyOppEffects(Pokemon p){
-        super.applyOppEffects(p);
         Effect.burn(p);
 
     }
