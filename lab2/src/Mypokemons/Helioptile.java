@@ -9,11 +9,11 @@ import ru.ifmo.se.pokemon.Type;
 public class Helioptile extends Pokemon {
     public Helioptile(String name, int level) {
         super(name, level);
-        super.setType(Type.ELECTRIC, Type.NORMAL);
-        super.setStats(44, 38, 33, 61, 43, 70);
+        setType(Type.ELECTRIC, Type.NORMAL);
+        setStats(44, 38, 33, 61, 43, 70);
         RockTomb rockTomb = new RockTomb(60,95);
         Rest rest = new Rest(0,0);
         WildCharge wildCharge = new WildCharge(90,100);
-        super.setMove(rockTomb,rest,wildCharge);
+        setMove(rockTomb,rest,wildCharge);
     }
 }
