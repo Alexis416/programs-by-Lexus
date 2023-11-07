@@ -9,7 +9,8 @@ public class FocusBlast extends SpecialMove {
     }
     @Override
     protected void applyOppEffects(Pokemon p){
-        Effect def = new Effect().stat(Stat.SPECIAL_DEFENSE,-1);
+        Effect def = new Effect();
+        def.stat(Stat.SPECIAL_DEFENSE,-1);
         if (Program.chance(0.1));
         p.addEffect(def);
     }
