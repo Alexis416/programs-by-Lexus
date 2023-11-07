@@ -8,7 +8,8 @@ public class DoubleTeam extends StatusMove {
     }
     @Override
     protected void applySelfEffects(Pokemon p){
-        Effect evasion = new Effect().stat(Stat.EVASION,+1);
+        Effect evasion = new Effect();
+        evasion.stat(Stat.EVASION,+1);
         p.addEffect(evasion);
     }
 
