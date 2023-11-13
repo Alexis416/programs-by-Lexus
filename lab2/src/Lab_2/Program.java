@@ -1,10 +1,10 @@
 package Lab_2;
 
-import Mypokemons.*;
+import pokemons.*;
 import ru.ifmo.se.pokemon.Battle;
 
 public class Program {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InvalidInputException {
         Battle b = new Battle();
         Torkoal p1 = new Torkoal("Паша", 1);
         Helioptile p2  = new Helioptile("Саша", 1);
@@ -19,8 +19,5 @@ public class Program {
         b.addAlly(p5);
         b.addFoe(p6);
         b.go();
-    }
-    public static boolean chance(double d){
-        return d > Math.random();
     }
 }
