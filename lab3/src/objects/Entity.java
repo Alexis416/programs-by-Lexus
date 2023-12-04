@@ -22,7 +22,7 @@ public class Entity extends Obj implements Property, Feel {
 
     @Override
     public String toString() {
-      return name;
+        return name;
     }
 
     private final String name;
